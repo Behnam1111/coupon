@@ -43,7 +43,7 @@ class Coupon(Base):
     capacity_of_use = Column(Integer, unique=False, index=False)
     status = Column(Integer, unique=False, index=False)
     expire_time = Column(Date, unique=False, index=False)
-    code = Column(String(20), unique=False, index=False)
+    code = Column(String(20), unique=True, index=True)
 
 
 class Coupon_User(Base):

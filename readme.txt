@@ -13,3 +13,4 @@ To run the project you can use:
 uvicorn main:app
 
 You can see the swagger documentation for more information at http://127.0.0.1:8000/docs
+First you need to signup and after that you need to approve the signup, and then you can login and use the endpoints.

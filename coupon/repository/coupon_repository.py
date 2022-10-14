@@ -40,3 +40,6 @@ class CouponRepository:
 
     def get_coupon(self, id: int):
         return self.sess.query(Coupon).filter(Coupon.id == id).one_or_none()
+
+    def get_coupon_by_code(self, code):
+        return self.sess.query(Coupon).filter(Coupon.code == code).one_or_none()
